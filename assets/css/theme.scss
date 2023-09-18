@@ -215,6 +215,22 @@ a.fn-item {
   hyphens: auto;
 }
 
+#google-map {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+#google-map iframe {
+  width: 100% !important;
+  height: 300px !important;
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+#google-map iframe {
+  width: 300px !important;
+}
+}
+
 /* ======= Single pages =========== */
 .post-template {
 
