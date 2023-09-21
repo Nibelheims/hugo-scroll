@@ -8,6 +8,10 @@
   <link rel="shortcut icon" href="{{ . | absURL }}" type="image/png"
 />{{ end }}
 
+{{ with .Site.Params.canonical }}
+  <link rel="canonical" href="{{ . }}"
+/>{{ end }}
+
 {{ with .Site.Params.description }}
   <meta name="description" content="{{ . }}"
 />{{ end }}
